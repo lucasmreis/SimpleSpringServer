@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SimpleController {
 
-	@RequestMapping("/")
-	public SimpleModel home(@RequestParam(value="name", required=false, defaultValue="Lucas Reis") String name) {
-		return new SimpleModel(name);
+	@RequestMapping("/aaa")
+	public SimpleModel home() {
+		return new SimpleModel("teste");
 	}
 }
